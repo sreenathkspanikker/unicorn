@@ -1,24 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { List } from './components'
 
-function App() {
+
+const App =() => {
+
+  let data = [
+    {
+        name: 'ModernOffice',
+        value: 1
+    },
+    {
+        name: 'Office',
+        value: 0
+      }
+  ]
+
+  const handleClick = (e, key) => {
+    console.log(e);
+    if (key === 'add') console.log("added");
+    else return  console.log("remove");
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <List data={data} handleClick={ (e, key) => handleClick(e, key) }/>
     </div>
   );
 }

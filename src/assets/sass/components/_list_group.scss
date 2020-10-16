@@ -1,0 +1,19 @@
+.list-group{
+    width: 75%;
+    margin: 0 auto;
+    .list-group-item{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        strong{
+            margin-right: 1rem;
+        }
+        small{
+            font-size: 1em;
+        }
+        .btn{
+            width: 45px;
+            height: 45px;
+        }
+    }
+}

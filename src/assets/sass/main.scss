@@ -1,0 +1,12 @@
+// BOOTSTRAP 
+@import '~bootstrap/scss/bootstrap-grid.scss';
+@import '~bootstrap/scss/bootstrap.scss';
+
+// NORMALISE
+@import './core/normalise';
+
+// COMPONENTS
+@import './components/list_group';
+
+// PAGES
+@import './pages/home'
